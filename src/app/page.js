@@ -16,15 +16,13 @@ const Home = () => {
       </div>
       <div className="">
         <TopBar />
-        <div className="lg:mx-25 mx-[2%]">
+        <div className="lg:mx-28 mx-[2%]">
           <Header />
-          <div className="">
-            <HeroSection />
-          </div>
+          <HeroSection />
         </div>
         <BodyLink />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

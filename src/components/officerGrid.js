@@ -8,12 +8,12 @@ import shrikantImage from "../../public/shrikant.png";
 const officers = [
   {
     name: "Shri. Devendra Fadnavis",
-    title: "Hon'ble Chief Minister, Maharashtra State",
+    title: "Hon'ble Chief Minister",
     imageUrl: devendraImage,
   },
   {
     name: "Smt. Rashmi Shukla (IPS)",
-    title: "Directorate General Resettlement, Maharashtra State",
+    title: "DGP Maharashtra State",
     imageUrl: rashmiImage,
   },
   {
@@ -23,7 +23,7 @@ const officers = [
   },
   {
     name: "Shri Shrikant Dhivare (IPS)",
-    title: "Superintendent of Police, Dhule, Maharashtra State",
+    title: "Superintendent of Police, Dhule",
     imageUrl: shrikantImage,
   },
 ];
@@ -49,13 +49,13 @@ const OfficerGrid = () => {
   };
 
   return (
-    <div className="absolute left-0 w-full" style={{ top: "50%" }}>
+    <div className="absolute left-0 w-full" style={{ top: "63%" }}>
       <div className="flex justify-center">
-        <div className="w-[90%] bg-transparent p-4 rounded-xl shadow-lg">
+        <div className="w-[90%] bg-transparent rounded-xl">
           {/* Carousel container */}
           <div
             ref={slideRef}
-            className="flex gap-3 overflow-x-auto scroll-smooth snap-x scrollbar-hide"
+            className="flex gap-2 overflow-x-auto scroll-smooth snap-x scrollbar-hide justify-center"
           >
             {officers.map((officer, index) => (
               <div
@@ -70,7 +70,7 @@ const OfficerGrid = () => {
         </div>
       </div>
       {/* Dot Navigation */}
-      <div className="flex justify-center space-x-2 mt-4">
+      <div className="hidden flex justify-center space-x-2 mt-4">
         {officers.map((_, index) => (
           <button
             key={index}

@@ -1,6 +1,6 @@
 const BodyLink = () => {
   return (
-    <div className="p-4 text-center mb-5">
+    <div className="p-4 text-center mt-10">
       <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
         <a
           href="#"

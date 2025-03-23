@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const RightSidebar = () => {
   return (
-    <div className="fixed top-[30%]  right-0 w-20 bg-gray-200 p-1 py-5 hidden md:flex flex-col shadow-lg rounded-l-xl">
+    <div className="fixed top-[20%]  right-0 w-20 bg-gray-200 p-1 py-5 hidden md:flex flex-col shadow-lg rounded-l-3xl">
       <a
         href="#"
         className="flex flex-col items-center mb-2"

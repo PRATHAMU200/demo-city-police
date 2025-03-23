@@ -21,7 +21,7 @@ const HeroSection = () => {
 
   return (
     <a
-      className="relative w-full min-h-screen flex flex-col"
+      className="relative w-full min-h-[400px] flex flex-col"
       title="Republic Day Event"
     >
       {/* Background Image */}
@@ -29,7 +29,7 @@ const HeroSection = () => {
         src={heroImages[currentHero]}
         alt="Republic Day Event"
         fill
-        className="absolute top-0 left-0 w-full mx-auto max-h-[500px] h-full object-cover -z-10 rounded-4xl"
+        className="absolute top-0 left-0 w-full mx-auto max-h-[450px] h-full object-cover -z-10 rounded-4xl"
       />
 
       {/* Officer Grid Positioned at the Bottom */}

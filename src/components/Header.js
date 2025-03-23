@@ -25,16 +25,16 @@ export default function Header() {
     "Police Corner",
   ];
   return (
-    <header className="bg-white w-full shadow-md">
+    <header className="bg-white w-full">
       {/* Main Header */}
-      <div className="flex items-center justify-between px-6 py-4">
+      <div className="flex items-center justify-between px-6 py-1">
         {/* Logo */}
         <div className="flex items-center space-x-4 px-6">
           <Image
             src={national}
             title="National Embelem"
             alt="National Embelem"
-            width={30}
+            width={29}
           />
         </div>
 
@@ -59,7 +59,7 @@ export default function Header() {
             <option className="rounded-xl">Station 2</option>
           </select>
           <div
-            className={`w-22 h-7 flex items-center rounded-full p-1 cursor-pointer relative ${
+            className={`w-24 h-7 flex items-center rounded-full p-1 cursor-pointer relative ${
               language === "en" ? "bg-blue-500" : "bg-gray-400"
             }`}
             onClick={() => setLanguage(language === "en" ? "ma" : "en")}
@@ -125,7 +125,7 @@ export default function Header() {
 
       {/* Navigation Bar */}
       <nav
-        className={`bg-white px-3 py-3 text-sm ${
+        className={`bg-white px-3 py-1 text-sm ${
           menuOpen ? "block items-center" : "hidden"
         } md:flex md:justify-between md:items-center`}
       >
@@ -135,48 +135,52 @@ export default function Header() {
           title="City Police Logo"
           className="flex items-center space-x-4 !no-underline"
         >
-          <Image src={logo} alt="City Police Logo" width={100} height={100} />
+          <Image src={logo} alt="City Police Logo" height={70} />
           <h1 className="text-2xl font-bold text-blue-900">City Police</h1>
         </a>
 
         {/* Middle Section: Navigation Links */}
         <div className="flex flex-col md:flex-row text-blue-900 ">
-          <div className="flex items-center px-4">
+          <div className="flex items-center px-2 text-sm">
             <a href="#" className="hover:text-blue-600" title="Home">
               Home
             </a>
           </div>
-          <div key="About Us" title="About Us" className="relative group">
-            <button className="flex items-center px-4 py-2 hover:text-blue-600">
-              About Us <ChevronDown size={16} />
+          <div
+            key="About Us"
+            title="About Us"
+            className="relative group text-sm"
+          >
+            <button className="flex items-center px-2 py-2 hover:text-blue-600">
+              <span>About Us</span> <ChevronDown size={16} />
             </button>
             <div className="absolute left-0 top-full bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 z-20">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                 Crime Report
               </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                 Lost & Found
               </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+              <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                 Feedback
               </a>
             </div>
           </div>
           {/* Show individual items on large screens */}
-          <div className="md:hidden lg:flex space-x-4">
+          <div className="md:hidden lg:flex space-x-2">
             {menuItems.map((item) => (
               <div key={item} title={item} className="relative group">
-                <button className="flex items-center px-4 py-2 hover:text-blue-600">
+                <button className="flex items-center px-2 py-2 hover:text-blue-600">
                   {item} <ChevronDown size={16} />
                 </button>
                 <div className="absolute left-0 top-full bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 z-20">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                  <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                     Crime Report
                   </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                  <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                     Lost & Found
                   </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+                  <a href="#" className="block px-3 py-2 hover:bg-gray-200">
                     Feedback
                   </a>
                 </div>
@@ -186,7 +190,7 @@ export default function Header() {
           {/* "More" dropdown for tablet screens */}
           <div className="hidden md:flex lg:hidden relative">
             <div key="More" title="More" className="relative group">
-              <button className="flex items-center px-4 py-2 hover:text-blue-600">
+              <button className="flex items-center px-3 py-2 hover:text-blue-600">
                 More <ChevronDown size={16} />
               </button>
               <div className="absolute left-0 top-full bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 z-20">
