@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <div className="">
         <TopBar />
-        <div className="lg:mx-28 mx-[2%]">
+        <div className="lg:mx-28 mx-[1%]">
           <Header />
           <HeroSection />
         </div>
