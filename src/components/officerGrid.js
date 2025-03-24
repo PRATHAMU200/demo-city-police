@@ -55,7 +55,7 @@ const OfficerGrid = () => {
           {/* Carousel container */}
           <div
             ref={slideRef}
-            className="flex gap-2 overflow-x-auto scroll-smooth snap-x scrollbar-hide"
+            className="flex gap-1 overflow-x-auto scroll-smooth snap-x scrollbar-hide"
           >
             {officers.map((officer, index) => (
               <div

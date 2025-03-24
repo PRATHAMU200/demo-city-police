@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const RightSidebar = () => {
   return (
-    <div className="fixed top-[20%]  right-0 w-20 bg-gray-200 p-1 py-5 hidden md:flex flex-col shadow-lg rounded-l-3xl">
+    <div className="fixed top-[24%]  right-0 w-20 bg-gray-200 p-1 py-4 hidden md:flex flex-col shadow-lg rounded-l-3xl">
       <a
         href="#"
         className="flex flex-col items-center mb-2"
@@ -11,8 +11,8 @@ const RightSidebar = () => {
         <Image
           src="/1.png"
           alt="National Cybercrime Reporting"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         {/* <span className="text-sm text-center">
           National Cybercrime Reporting
@@ -26,8 +26,8 @@ const RightSidebar = () => {
         <Image
           src="/2.png"
           alt="Block Lost/Stolen Mobile"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         {/* <span className="text-sm text-center">Block Lost/Stolen Mobile</span> */}
       </a>
@@ -39,21 +39,21 @@ const RightSidebar = () => {
         <Image
           src="/3.png"
           alt="Report Industry Grievance"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         {/* <span className="text-sm text-center">Report Industry Grievance</span> */}
       </a>
       <a
         href="#"
-        className="flex flex-col items-center mb-2"
+        className="flex flex-col items-center mb-1"
         title="Know Mobile Connections"
       >
         <Image
           src="/4.png"
           alt="Know Mobile Connections"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         {/* <span className="text-sm text-center">Know Mobile Connections</span> */}
       </a>
@@ -65,8 +65,8 @@ const RightSidebar = () => {
         <Image
           src="/5.png"
           alt="Social Media Complaints"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         {/* <span className="text-sm text-center">Social Media Complaints</span> */}
       </a>

@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const OfficerCard = ({ name, title, imageUrl }) => {
   return (
-    <div className="min-w-[275px] bg-[#023347] bg-opacity-50 p-4 py-6 rounded-3xl shadow-md">
+    <div
+      className="min-w-[275px] bg-[#023347] bg-opacity-50 p-4 py-6 rounded-3xl shadow-md"
+      title={name}
+    >
       <Image
         src={imageUrl}
         alt={name}

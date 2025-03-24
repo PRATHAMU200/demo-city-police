@@ -46,7 +46,9 @@ export default function Header() {
               placeholder="Search"
               className="bg-[#EDF5F5] px-4 pr-10 py-2 rounded-2xl border border-gray-300 focus:outline-none w-full transition-all duration-300 ease-in-out hover:border-gray-500 focus:border-blue-500"
             />
-            <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5 " />
+            <a href="#">
+              <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5 " />
+            </a>
           </div>
           <select
             title="Select the police station"
@@ -59,17 +61,17 @@ export default function Header() {
             <option className="rounded-xl">Station 2</option>
           </select>
           <div
-            className={`w-24 h-7 flex items-center rounded-full p-1 cursor-pointer relative ${
-              language === "en" ? "bg-blue-500" : "bg-gray-400"
+            className={`w-25 h-8 flex items-center rounded-full border border-gray-300 p-1 cursor-pointer relative bg-[#EDF5F5] ${
+              language === "en" ? "" : ""
             }`}
-            onClick={() => setLanguage(language === "en" ? "ma" : "en")}
+            onClick={() => setLanguage(language === "en" ? "म" : "en")}
           >
             <div
-              className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform flex items-center justify-center text-xs font-bold ${
-                language === "en" ? "translate-x-5" : "translate-x-0"
+              className={`w-6 h-6 text-white bg-blue-500 rounded-full shadow-md transform transition-transform flex items-center justify-center text-xs font-bold ${
+                language === "en" ? "translate-x-4" : "translate-x-0"
               }`}
             >
-              {language === "en" ? "EN" : "MR"}
+              {language === "en" ? "EN" : "म"}
             </div>
           </div>
           {/* Accessibility icon options */}
@@ -213,17 +215,17 @@ export default function Header() {
           <a
             href="mailto:example@email.com"
             title="Email to us"
-            className="bg-[#EDF5F5] text-black px-4 py-2 rounded-2xl shadow-md hover:bg-green-700 flex items-center space-x-2"
+            className="bg-[#EDF5F5] text-black px-3 py-2 rounded-2xl shadow-md hover:bg-green-700 flex items-center space-x-2"
           >
-            <Mail size={18} /> <span>Email</span>
+            <span>Email</span> <Mail size={18} />
           </a>
           <a
             href="https://wa.me/919999999999"
             target="_blank"
             title="contact us"
-            className="bg-[#9FE5B5] text-black px-4 py-2 rounded-2xl shadow-md hover:bg-green-700 flex items-center space-x-2"
+            className="bg-[#9FE5B5] text-black px-3 py-2 rounded-2xl shadow-md hover:bg-green-700 flex items-center space-x-2"
           >
-            <MessageCircle size={18} /> <span>Chat with us</span>
+            <span>Chat with us</span> <MessageCircle size={18} />
           </a>
         </div>
       </nav>
